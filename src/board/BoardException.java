@@ -9,17 +9,13 @@ package board;
  *
  * @author 99030499
  */
-public class Piece {
-    protected Position position;
-    private Board board;
-
-    public Piece(Board board) {
-        this.board = board;
-        this.position = null;
+public class BoardException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
+    
+    public BoardException(String msg){
+        super(msg);
     }
-
-    protected Board getBoard() {
-        return board;
-    }
+    
+    
     
 }
